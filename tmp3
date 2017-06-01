@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use utf8;
+use open ":utf8";
+
+my $input = $ARGV[0];
+
+open(DATAFILE, ">", "$input.rb")
+		or die("error :$!");
+
+while (<DATA>) {
+	print DATAFILE;
+}
+
+close(DATAFILE);
+
+__DATA__
+# encoding : utf-8
