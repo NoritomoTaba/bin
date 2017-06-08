@@ -7,5 +7,5 @@ bin力向上のためのディレクトリ
 ```
 $ tmp <file_name>
 $ ls
-filename.pl
+file_name.pl
 ```
