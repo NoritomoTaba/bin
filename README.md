@@ -1,7 +1,9 @@
-# bin
-
+bin
+---
 bin力向上のためのディレクトリ
 
----
-' tmp ' は, .plファイル作成コマンド
-{usage}
+# tmp 
+`.pl`ファイル作成コマンド  
+`$ tmp <file_name>
+`$ ls`
+`filename.pl`
