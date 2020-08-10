@@ -6,7 +6,8 @@ use open ":utf8";
 
 my $input = $ARGV[0];
 
-open(DATAFILE, ">", "$input.pl") or die("error :$!");
+open(DATAFILE, ">", "$input.rb")
+		or die("error :$!");
 
 while (<DATA>) {
 	print DATAFILE;
@@ -15,10 +16,4 @@ while (<DATA>) {
 close(DATAFILE);
 
 __DATA__
-#!/usr/bin/env perl
-
-use strict;
-use warnings;
-use Data::Printer;
-
-
+# encoding : utf-8
