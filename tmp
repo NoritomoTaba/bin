@@ -1,19 +1,16 @@
-#!/usr/bin/env perl
-use strict;
-use warnings;
-use utf8;
-use open ":utf8";
+#!/usr/bin/env ruby
 
-my $input = $ARGV[0];
+# 使い方
+#
+# $ tmp 123
+# $ ls
+#   1-2-3.rb
+#
 
-open(DATAFILE, ">", "$input.rb")
-		or die("error :$!");
+require 'fileutils'
 
-while (<DATA>) {
-	print DATAFILE;
-}
+file_name = ARGV[0].split(//).join("-")
+FileUtils.touch("#{file_name}.rb")
 
-close(DATAFILE);
 
-__DATA__
-# encoding : utf-8
+
